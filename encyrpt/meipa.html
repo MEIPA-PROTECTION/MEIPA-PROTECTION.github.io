@@ -4,10 +4,30 @@
   const urlParams = new URLSearchParams(queryString);
   
   if(urlParams.has('encyrpt')){
-      window.location.replace("https://meipa-protection.github.io/encyrpt/meipa.html");
+      alert("haha,blank page!");
       console.log("passed");
+      console.log("Welcome to meipa!");
+      console.log("input 'login()' to login");
   }else{
       window.location.replace('https://accessdenied');
       console.log("failed");
+  };
+  function login(){
+      alert("Server Connecting");
+      alert("connected");
+      var name = prompt("User Name:");
+      var password = prompt("User Password:");
+      if(check(name,password)){
+          alert("Correct Password")
+      }else{
+          alert("Wrong Password,please contact meipa's email")
+      };
+  };
+  function check(n,p){
+    if(n=="meipa"&&p=="seead://nlcwzdexrad.rtesfm.tz/xptal/dpncpeozzc.sexw"){
+      return True;
+    }else{
+      return False;
+    };
   };
 </script>
