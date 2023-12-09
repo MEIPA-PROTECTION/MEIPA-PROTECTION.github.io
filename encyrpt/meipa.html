@@ -1,0 +1,11 @@
+<script>
+  if(xhr.status === 200){
+    var loginPageRedirectHeader = xhr.getResponseHeader("meipaencyrpt");
+    if(loginPageRedirectHeader && loginPageRedirectHeader !== ""){
+        window.location.replace(loginPageRedirectHeader);
+        console.log("passed")
+    }else{
+        console.log("failed")
+    }
+  }
+</script>
