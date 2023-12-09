@@ -1,13 +1,13 @@
 
 <script>
-  var xhr = new XMLHttpRequest();
-  if(xhr.status === 200){
-    var loginPageRedirectHeader = xhr.getResponseHeader("meipaencyrpt");
-    if(loginPageRedirectHeader && loginPageRedirectHeader !== ""){
-        window.location.replace(loginPageRedirectHeader);
-        console.log("passed");
-    }else{
-        console.log("failed");
-    }
-  }
+  const queryString = window.location.search;
+  const urlParams = new URLSearchParams(queryString);
+  
+  if(urlParams.has('encyrpt')){
+      window.location.replace("https://meipa-protection.githuh.io/encyrpt/meipa.html");
+      console.log("passed");
+  }else{
+      window.location.replace('https://accessdenied');
+      console.log("failed");
+  };
 </script>
