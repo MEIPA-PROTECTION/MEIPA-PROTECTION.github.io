@@ -1,13 +1,13 @@
-<meta http-equiv="Permissions-Policy" content="interest-cohort=()">
+
 <script>
   var xhr = new XMLHttpRequest();
   if(xhr.status === 200){
     var loginPageRedirectHeader = xhr.getResponseHeader("meipaencyrpt");
     if(loginPageRedirectHeader && loginPageRedirectHeader !== ""){
         window.location.replace(loginPageRedirectHeader);
-        console.log("passed")
+        console.log("passed");
     }else{
-        console.log("failed")
+        console.log("failed");
     }
   }
 </script>
