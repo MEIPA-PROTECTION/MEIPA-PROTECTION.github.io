@@ -4,7 +4,7 @@
   const urlParams = new URLSearchParams(queryString);
   
   if(urlParams.has("encyrpt")){
-      return "";
+      return true;
   }else{
       window.location.replace('https://accessdenied');
       console.log("failed");
@@ -12,7 +12,10 @@
 </script>
 <style>
   .console{
+    width: 100%;
+    height: 100vh;
     background-color: black;
+    font-size: 5vw;
   }
   h4{
     color: #00FF00;
