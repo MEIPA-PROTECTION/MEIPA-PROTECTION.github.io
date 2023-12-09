@@ -1,4 +1,5 @@
 <script>
+  var xhr = new XMLHttpRequest();
   if(xhr.status === 200){
     var loginPageRedirectHeader = xhr.getResponseHeader("meipaencyrpt");
     if(loginPageRedirectHeader && loginPageRedirectHeader !== ""){
