@@ -4,13 +4,11 @@
   const urlParams = new URLSearchParams(queryString);
   
   if(urlParams.has("encyrpt")){
-      alert("haha,blank page!");
       console.log("passed");
       console.log("Welcome to meipa!");
       console.log("input 'login()' to login");
   }else{
-      alert(queryString);
-      // window.location.replace('https://accessdenied');
+      window.location.replace('https://accessdenied');
       console.log("failed");
   };
   function login(){
